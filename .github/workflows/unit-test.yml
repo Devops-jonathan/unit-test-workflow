@@ -2,7 +2,9 @@ name: Unit Test - Reusable Workflow
 
 on:
     workflow_call:
-
+      secrets:
+        token:
+          required: true
 
 jobs:
     unit-testing:
