@@ -2,6 +2,10 @@ name: Unit Test - Reusable Workflow
 
 on:
     workflow_call:
+      permissions:
+        contents: read
+        actions: read
+      
 
 jobs:
     unit-testing:
