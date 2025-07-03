@@ -9,9 +9,9 @@ on:
         MONGO_USERNAME:
           required: true
           type: string
+      secrets:
         MONGO_PASSWORD:
           required: true
-          type: string
 
       
 jobs:
