@@ -25,14 +25,8 @@ jobs:
         - name: Checkout Repository
           uses: actions/checkout@v4
     
-        - name: Cache NPM dependencies
-          uses: actions/cache@v4
-          with:
-            key: "${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}"
-            path: node_modules
-
-        - name: Install Dependencies
-          run: npm install
+        - name: Npm Caching and Install - My Custom Action
+          uses: Devops-jonathan/my-first-custom-action@1.0.0
     
         - name: Unit Testing
           run: npm test
